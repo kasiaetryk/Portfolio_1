@@ -1,0 +1,472 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,900'
+
+/*Style*/
+=transition($transition)
+	-webkit-transition: $transition
+	-moz-border-transition: $transition
+	-ms-border-transition: $transition
+	transition: $transition
+  
+* 
+	box-sizing: border-box
+	margin: 0
+
+body 
+	font-family: 'Raleway', sans-serif
+	font-size: 14px
+	color: #888888
+	margin: 0
+
+h1 
+	font-size: 35px
+	text-transform: uppercase
+
+h2 
+	font-size: 30px
+	text-transform: uppercase
+	font-weight: 800
+	margin: 50px
+	color: #313332	
+
+h3 
+	font-size: 20px
+	text-transform: uppercase	
+
+p 
+	line-height: 26px
+
+.targetOfMenu:before
+	display: block
+	content: " "
+	margin-top: -120px
+	height: 120px
+	visibility: hidden
+.row 
+	text-align: center
+	margin-bottom: 30px
+
+.row:before, 
+.row:after 
+	content: ""
+	display: table
+	clear: both
+
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	padding: 0px
+
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+.col-1-5 
+	width: 20%
+.col-2-5 
+	width: 40%
+.col-3-5 
+	width: 60%
+.col-4-5 
+	width: 80%
+.col-1-10 
+	width: 10%
+.col-0
+	@media (max-width: 1050px) 
+		display: none
+.col-m-3
+	@media (max-width: 1050px) 
+		width: 25%
+.col-m-4 
+	@media (max-width: 1050px) 
+		width: 33.33%
+.col-s-0 
+	@media (max-width: 850px)
+		display: none
+.col-s-12 
+	@media (max-width: 850px)
+		display: block
+		width: 100%
+.row-s-0 
+	@media (max-width: 850px)
+		display: none
+/*Header section*/
+header 
+	position: fixed
+	top: 0px
+	width: 100%
+	background: #313332
+	padding: 0 150px
+	z-index: 100
+	@media (max-width: 1050px) 
+		padding: 0 50px
+	@media (max-width: 850px)
+		position: fixed
+	img 
+		float: left
+		padding: 20px 0
+		@media (max-width: 850px)
+			display: block
+			float: none
+			margin: 0 auto
+button
+	@media (max-width: 850px)
+		height: 30px
+		width: 30px
+		float: right
+		margin-top: 20px
+		background: none
+		border: 0
+		text-align: center
+		font-size: 20px
+		line-height: 30px
+		color: white
+		padding: 0
+		cursor: pointer		
+nav
+	li
+		display: inline-block
+		padding: 0 20px
+		height: 70px
+		line-height: 70px
+		@media (max-width: 850px)
+			display: block
+			height: 40px
+			line-height: 40px
+			padding: 0 10px
+			font-size: 18px		
+		a 
+			color: white
+			font-weight: bold
+			text-decoration: none			
+			&:hover 
+				color: #01CBEF
+				@media (max-width: 850px) 
+					color: #fff
+	ul
+		text-align: right
+		@media (max-width: 850px)
+			text-align: center
+			width: 100%
+			padding: 0
+			
+
+/*First section*/
+
+.jumbotron 
+	overflow: hidden
+	margin: 0 auto
+	padding-top: 70px
+	width: 1280px
+	height: 700px
+	@media (max-width: 850px)
+		padding: 0
+		height: auto
+		padding: 100px 0
+		button 
+		height: 30px
+		width: 30px
+		border: 0
+		border-radius: 50%
+		background-color: #807F7D
+		margin: 0 20px
+	@media (max-width: 850px)
+		display: none
+	ul
+		padding: 0
+		margin: 0
+		width: 3840px
+		li
+			list-style: none
+			float: left
+			width: 1280px
+				img
+					position: relative	
+
+.slogan 
+	height: auto
+	min-height: 33%
+	width: 40%
+	background-color: rgba(0,0,0,0.5)
+	position: absolute
+	left: 30%
+	top: 33%
+	h1
+		text-align: center
+		color: white
+		padding: 40px
+	
+/*Second section*/
+.offer 
+	padding: 0
+	h2 
+		@media (max-width: 850px)
+				margin-top: 70px
+	.fa 
+		font-size: 70px
+		color: white
+		width: 100px
+		height: 100px
+		line-height: 100px
+		margin: 0
+		background-color: #313332
+		border-radius: 15px
+		&:hover 
+			background-color: #00C7E8	
+			+transition(.3s)
+			@media (max-width: 850px)
+				background-color: #313332	
+	h3 
+		margin: 40px 0 10px 0
+		color: #313332
+		@media (max-width: 850px)
+			margin-top: 10px	
+	p 
+		line-height: 26px
+		padding: 0 30px
+		@media (max-width: 850px)
+			margin-bottom: 20px
+
+/*Third section*/
+.featured 
+	margin-top: -30px
+	@media (max-width: 850px)
+		margin-top: 0
+	h2 
+		color: #313332
+		@media (max-width: 850px)
+			padding: 0
+	p 
+		padding: 15px 20% 0
+		@media (max-width: 1050px) 
+			padding: 15px 10% 0
+
+/*Fourth section*/
+.gallery 
+	margin: 0
+	[class*="col-"]
+		position: relative
+		overflow: hidden
+		height: 20vw
+		text-align: center
+		&:hover 
+			.layer
+				opacity: 1 
+				.fa
+					opacity: 1 
+	img 
+		min-height: 20vw
+		width: 100%
+		@media (max-width: 850px)
+			width: 100%
+
+	.col-s-12 
+		@media (max-width: 850px)
+			height: auto
+
+.layer 
+	position: absolute
+	line-height: 20vw
+	width: 100%	
+	height: 100%
+	display: inline
+	background-color: rgba(0, 0, 0, 0.5)
+	opacity: 0
+	+transition(0.5s)
+	@media (max-width: 850px)
+		background-color: rgba(0, 0, 0, 0)
+		opacity: 1
+		padding: 30% 0	
+	.fa 
+		font-size: 20px
+		color: #000
+		background-color: #fff
+		width: 40px
+		height: 40px
+		line-height: 40px
+		border-radius: 5px
+		opacity: 0
+		+transition(0.5s)
+		@media (max-width: 850px)
+			font-size: 40px
+			width: 60px
+			height: 60px
+			line-height: 60px
+			border-radius: 5px
+			opacity: 1
+
+/*Fifth section*/
+.crew 
+	margin-bottom: 50px
+	@media (max-width: 850px)
+		margin: 15px 0
+	[class*="col-"] 
+		position: relative
+		text-align: center
+
+.crew-img 
+	position: relative
+	width: 16vw
+	margin: 0 auto
+	height: 16vw
+	border-radius: 8vw
+	overflow: hidden
+	@media (max-width: 850px)
+		width: 40vw
+		height: 40vw
+		border-radius: 20vw
+	img 
+		width: 100%
+		height: 100%
+	&:hover ~ .crew-txt
+		display: block
+		background-color: rgba(0, 0, 0, 0.5)
+		@media (max-width: 850px)
+			background-color: rgba(0, 0, 0, 0)
+
+.crew-txt 
+	position: absolute
+	top: 0
+	left: 2vw
+	width: 16vw
+	height: 16vw
+	display: none
+	color: #fff
+	border-radius: 8vw
+	&:hover
+		display: block
+		background-color: rgba(0, 0, 0, 0.5)
+	@media (max-width: 1050px) 
+		left: 4.5vw
+	@media (max-width: 850px)
+		position: relative
+		top: 0
+		left: 0
+		width: 100%
+		height: 30px
+		line-height: 30px
+		display: block
+		color: #000
+		border-radius: 0
+	p 
+		line-height: 16vw
+		@media (max-width: 850px)
+			line-height: 30px
+.crew + p 
+	font-size: 18px
+	text-align: center
+	font-weight: bold
+	color: #60605E
+	display: block
+	padding: 20px
+	margin: 0
+	@media (max-width: 850px)
+		padding-top: 0
+		padding-bottom: 40px
+
+/*Sixth section*/
+.tablet 
+	background-color: #838584
+	color: #fff
+	text-align: left
+	@media (max-width: 850px)
+		text-align: center
+		margin: 15px 0
+	h2 
+		color: #fff
+		margin-top: 50px
+		@media (max-width: 850px)
+			margin-top: 70px
+	.row 
+		text-align: left
+		margin: 10px 0 50px 0
+		@media (max-width: 850px)
+			text-align: center
+			margin: 10px 0
+		p 
+			display: inline-block
+			font-size: 14px
+			padding-right: 15px
+			@media (max-width: 850px)
+				padding: 15px 30px
+
+/*Seventh section*/
+.stats 
+	@media (max-width: 850px)
+		margin: 15px 0
+	h2 
+		font-size: 50px
+		color: #000
+		margin: 10px
+	p 
+		font-size: 16px
+		color: #00C7E8
+		font-weight: 900
+		text-transform: uppercase
+
+/*Footer section*/
+.footer 
+	background-color: #313332
+	color: #fff
+	text-align: left
+	padding-bottom: 30px
+	margin: 0
+	@media (max-width: 1050px) 
+		padding-left: 50px
+	@media (max-width: 850px)
+		margin-bottom: 0
+	h3 
+		display: inline-block
+		padding: 30px 0 20px 0
+	.fa 
+		font-size: 20px
+		width: 30px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		margin: 10px 10px 0 0
+		background-color: #00C7E8
+		color: #fff
+	.shortline 
+		display: inline-block
+		width: 100px
+		height: 1px
+		margin: 6px 10px
+		border-bottom: 1px solid white
+	p 
+		padding-right: 20px
+
+.touch 
+	.row 
+		margin: 0 0 10px 0
+		text-align: left
+		
+		.col-3 
+			font-weight: bold
+
+.copy 
+	background-color: #252726
+	padding: 30px
+	color: #fff
+	text-align: center
+	margin: 0
+
