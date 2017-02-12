@@ -1,14 +1,14 @@
 ## Synopsis
 
-This is a simple quote machine, which gives random quotes.
+Examle of company website prepare as a "one page".
 
 ## Motivation
 
-The purpose of this project was teach me how API works. I use following technologies: JavaScript and jQuery. Styling done using Sass, you need to compile your css files [Grunt/ Koala/ etc.]
+I use following technologies: HTML, CSS/Sass, JavaScript and jQuery.
 
 ## Installation
 
-Download whole git repository and add files to your project. Styling done using Sass, you need to compile your css files [Grunt/ Koala/ etc.]
+Download whole git repository and add files to your project. 
 
 ## License
 
